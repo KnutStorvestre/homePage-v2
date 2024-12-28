@@ -1,0 +1,40 @@
+/* Reset default margins and padding for the entire page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Set the background color for the entire page */
+html,
+body {
+  height: 100%;
+  background-color: #0f172a;
+}
+
+/* Center content and apply some spacing for readability */
+.navy-background {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    600px at var(--mouseX) var(--mouseY),
+    rgba(29, 78, 216, 0.15),
+    transparent 80%
+  );
+  z-index: 30;
+  transition: background 0.3s ease; /* Smooth transition effect */
+  will-change: background; /* Optimization hint for performance */
+}
