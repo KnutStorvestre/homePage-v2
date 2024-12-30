@@ -5,12 +5,10 @@ import "./styles/Styles.css";
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  // Update the mouse position whenever the mouse moves
   const handleMouseMove = (event: MouseEvent) => {
     setMousePosition({ x: event.clientX, y: event.clientY });
   };
 
-  // Add event listener for mouse movement on mount and clean up on unmount
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
 
@@ -26,7 +24,37 @@ function App() {
         background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
       }}
     >
-      <h1>App</h1>
+      <div className="text-containers">
+        <div className="flex-space-between">
+          <div>
+            <h1 className="name-header">Knut Storvestre</h1>
+            <h2>Master's in Secure and Reliable Communication</h2>
+            <p>
+              I build accessible, pixel-perfect digital experiences for the web.
+            </p>
+          </div>
+          <div>
+            <ul className="icon-list">
+              <li>asdf</li>
+              <li>asdf</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h2>About</h2>
+          <p>
+            I am a software developer with a Master's degree in Secure and
+            Reliable Communication. I have experience with web development,
+            mobile development, and backend development. I am passionate about
+            software development and I am always looking for new challenges.
+          </p>
+          <p>
+            I have experience with the following technologies: React, React
+            Native, Node.js, Express, MongoDB, PostgreSQL, Docker, Kubernetes,
+            and Git.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
