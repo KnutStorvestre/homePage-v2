@@ -16,7 +16,6 @@ body {
   display: flex;
   justify-content: center;
   color: white;
-  text-align: center;
 }
 
 .background-overlay {
@@ -42,6 +41,8 @@ body {
   gap: 20px;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  padding: 6rem 4rem;
+  justify-content: center;
 }
 
 .intro-text {
@@ -69,6 +70,48 @@ body {
   font-size: 1.5rem;
 }
 
-.description {
+.short-description {
+  font-size: 1.25rem;
+  max-width: 20rem;
+  margin-top: 1rem;
+}
+
+.long-description {
   font-size: 1rem;
+  max-width: 20rem;
+  margin-top: 1rem;
+}
+
+.about-paragraphs {
+  font-size: 1rem;
+  width: 50%;
+  margin-bottom: 9rem;
+}
+
+.about-paragraph {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .text-containers {
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1.5rem;
+  }
+
+  .name-header {
+    font-size: 1.5rem;
+  }
+
+  .title-header {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
 }

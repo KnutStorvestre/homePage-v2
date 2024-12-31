@@ -28,10 +28,16 @@ function App() {
         <div className="flex-space-between">
           <div>
             <h1 className="name-header">Knut Storvestre</h1>
-            <h2>Master's in Secure and Reliable Communication</h2>
-            <p>
-              I build accessible, pixel-perfect digital experiences for the web.
+            <h2 className="short-description">Masters in informatics</h2>
+            <p className="long-description">
+              Master's in informatics with specialization in Secure and Reliable
+              Communication
             </p>
+            <ul>
+              <li>About</li>
+              <li>Experience</li>
+              <li>Projects</li>
+            </ul>
           </div>
           <div>
             <ul className="icon-list">
@@ -40,18 +46,36 @@ function App() {
             </ul>
           </div>
         </div>
-        <div>
-          <h2>About</h2>
-          <p>
+        <div className="about-paragraphs">
+          <p className="about-paragraph">
             I am a software developer with a Master's degree in Secure and
             Reliable Communication. I have experience with web development,
             mobile development, and backend development. I am passionate about
             software development and I am always looking for new challenges.
           </p>
-          <p>
+          <p className="about-paragraph">
             I have experience with the following technologies: React, React
             Native, Node.js, Express, MongoDB, PostgreSQL, Docker, Kubernetes,
-            and Git.
+            and Git. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Obcaecati consequatur, possimus dicta, perferendis harum deserunt
+            fuga ad error tempore nostrum maiores tempora laboriosam dolor quos
+            porro omnis neque laudantium! Tempore!
+          </p>
+          <p className="about-paragraph">
+            I have experience with the following technologies: React, React
+            Native, Node.js, Express, MongoDB, PostgreSQL, Docker, Kubernetes,
+            and Git. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Obcaecati consequatur, possimus dicta, perferendis harum deserunt
+            fuga ad error tempore nostrum maiores tempora laboriosam dolor quos
+            porro omnis neque laudantium! Tempore!
+          </p>
+          <p className="about-paragraph">
+            I have experience with the following technologies: React, React
+            Native, Node.js, Express, MongoDB, PostgreSQL, Docker, Kubernetes,
+            and Git. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Obcaecati consequatur, possimus dicta, perferendis harum deserunt
+            fuga ad error tempore nostrum maiores tempora laboriosam dolor quos
+            porro omnis neque laudantium! Tempore!
           </p>
         </div>
       </div>
