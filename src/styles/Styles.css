@@ -12,14 +12,14 @@ body {
 }
 
 .navy-background {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   color: white;
 }
 
 .background-overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -53,6 +53,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  width: 25%;
 }
 
 .icon-list {
@@ -82,14 +83,25 @@ body {
   margin-top: 1rem;
 }
 
-.about-paragraphs {
+.right-column {
   font-size: 1rem;
-  width: 50%;
+  width: 50%; /* Reduced for better mobile view */
+}
+
+.about-paragraphs {
   margin-bottom: 9rem;
 }
 
 .about-paragraph {
   margin-bottom: 1rem;
+}
+
+.work-experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -113,5 +125,9 @@ body {
 
   .description {
     font-size: 1rem;
+  }
+
+  .about-paragraphs {
+    width: 100%;
   }
 }

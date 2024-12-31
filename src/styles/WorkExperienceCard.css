@@ -1,0 +1,55 @@
+.work-experience-card {
+  background-color: #1e293b;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.work-time-period,
+.work-position,
+.work-company {
+  margin: 0.5rem 0;
+}
+
+.work-description {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.work-links,
+.work-technologies {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.work-links li,
+.work-technologies li {
+  margin-bottom: 0.5rem;
+}
+
+.work-links a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.work-links a:hover {
+  text-decoration: underline;
+}
+
+.technology-item {
+  background-color: #334155;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
